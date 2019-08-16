@@ -10,7 +10,7 @@ resource "google_project_service" "project" {
   disable_dependent_services = true
 }
 
-resource "google_compute_instance" "demo" {
+resource "google_compute_instance" "mattpeters-demo" {
   name         = "${var.instance_name}"
   machine_type = "${var.machine_type}"
   zone         = "${var.gcp_zone}"
