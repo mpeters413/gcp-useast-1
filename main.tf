@@ -3,6 +3,13 @@ provider "google" {
   region      = "${var.gcp_region}"
 }
 
+resource "google_project_service" "project" {
+  project = "${var.gcp_project}"
+  service = "iam.googleapis.com"
+
+  disable_dependent_services = true
+}
+
 resource "google_compute_instance" "demo" {
   name         = "${var.instance_name}"
   machine_type = "${var.machine_type}"
