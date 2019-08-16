@@ -1,6 +1,6 @@
 variable "gcp_project" {
   description = "GCP project name"
-  default = "matts-first-TFProject"
+  default = "mattsFirstTFProject"
 }
 variable "gcp_region" {
   description = "GCP region, e.g. us-east1"
