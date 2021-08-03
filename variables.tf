@@ -20,7 +20,7 @@ variable "machine_type" {
 
 variable "instance_name" {
   description = "GCP instance name"
-  default = "mattpeters-demo"
+  default = "mattpeters-hashicorp-demo"
 }
 
 variable "image" {
