@@ -15,7 +15,7 @@ resource "google_compute_instance" "mattpeters" {
   machine_type = "${var.machine_type}"
   zone         = "${var.gcp_zone}"
   allow_stopping_for_update = true
-  tags = ["mattpeters"]
+  tags = ["hashicorp-demo, mattpeters, 2-days"]
   # remove tags for sentinel to fail (demo purposes)
 
   boot_disk {
